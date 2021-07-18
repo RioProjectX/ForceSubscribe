@@ -17,7 +17,7 @@ def _start(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/tgxbotz_chat).",
+                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/BHZBot_Support).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -42,8 +42,8 @@ def _start(client, message):
 	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/tgxbotz_update"),
-                           InlineKeyboardButton("Support Group", url="https://t.me/tgxbotz_chat")
+                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/BioHazard_Bots"),
+                           InlineKeyboardButton("Support Group", url="https://t.me/BHZBot_Support")
                       ],
 
                   ]
@@ -57,8 +57,8 @@ def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/tgxbotz_update"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/tgxbotz_chat")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/BioHazard_Bots"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/BHZBot_Support")
                 ],
             ]
         ),
@@ -74,14 +74,14 @@ def _source_code(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Creator", url="https://t.me/shrvan42")
+                    InlineKeyboardButton("Creator", url="https://t.me/Avrazel")
                 ],
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/tgxbotz_update"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/tgxbotz_chat")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/BioHazard_Bots"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/BHZBot_Support")
                 ],
                 [
-                    InlineKeyboardButton("Creator", url="https://t.me/shrvan42")
+                    InlineKeyboardButton("Creator", url="https://t.me/Avrazel")
                 ]
             ]
         ),
@@ -98,7 +98,7 @@ def _help(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/tgxbotz_chat).",
+                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/BHZBot_Support).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -120,7 +120,7 @@ def _help(client, message):
         except Exception:
             client.send_message(
                 chat_id=message.chat.id,
-                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/tgxbotz_chat).",
+                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/BHZBot_Support).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
