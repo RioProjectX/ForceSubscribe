@@ -1,5 +1,5 @@
 {
-    "name": "Force Sub Bot",
+    "name": "ForceSubscribeBOT",
     "description": "Python based bot to Force Users to sub a channel.",
     "logo": "",
     "keywords": [
@@ -7,11 +7,10 @@
         "pyrogram",
         "pyrogrambot",
         "telegram-bot",
-        "Forcesub",
         "ForceSubBot"
     ],
-    "repository": "https://github.com/shrvan42/ForceSub_Bot",
-    "success_url": "https://t.me/TgxBotz_Update",
+    "repository": "https://github.com/Rexinazor/ForceSubscribeBOT",
+    "success_url": "https://t.me/BioHazard_Bots",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
@@ -30,12 +29,12 @@
         },
         "UPDATES_CHANNEL": {
             "description": "Your bot updates channel username without @ or leave empty",
-            "value": "",
+            "value": "BioHazard_Bots",
             "required": false
         },
         "SUDO_USERS": {
             "description": "Sudo users (Goto @Missrose_Bot and send /id to get your id)",
-            "value": "",
+            "value": "1866542500",
             "required": false
         }
     },
