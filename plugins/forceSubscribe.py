@@ -76,7 +76,7 @@ def _check_member(client, message):
         client.leave_chat(chat_id)
 
 
-@Client.on_message(filters.command(["forcesubscribe", "fsub", "fsub@ForceSubscriber_UBot", "forcesubscribe@ForceSubscriber_UBot"]) & ~filters.private)
+@Client.on_message(filters.command(["forcesubscribe", "fsub"]) & ~filters.private)
 def config(client, message):
   user = client.get_chat_member(message.chat.id, message.from_user.id)
   if user.status is "creator" or user.user.id in Config.SUDO_USERS:
