@@ -9,8 +9,8 @@
         "telegram-bot",
         "ForceSubBot"
     ],
-    "repository": "https://github.com/Rexinazor/ForceSubscribeBOT",
-    "success_url": "https://t.me/BioHazard_Bots",
+    "repository": "https://github.com/RioProjectX/ForceSubscribe",
+    "success_url": "https://t.me/siiniaja",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
@@ -29,7 +29,7 @@
         },
         "UPDATES_CHANNEL": {
             "description": "Your bot updates channel username without @ or leave empty",
-            "value": "BioHazard_Bots",
+            "value": "riobotsupport",
             "required": false
         },
         "SUDO_USERS": {
