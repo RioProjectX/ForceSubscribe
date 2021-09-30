@@ -43,7 +43,7 @@ def _start(client, message):
                     [
                         [
                            InlineKeyboardButton("Join Updates Channel", url="https://t.me/riobotsupport"),
-                           InlineKeyboardButton("Support Group", url="https://t.me/siiniaja")
+                           InlineKeyboardButton("Support Group", url="https://t.me/riogroupsupport")
                       ],
 
                   ]
@@ -58,7 +58,7 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton("Join Updates Channel", url="https://t.me/riobotsupport"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/siiniaja")
+                    InlineKeyboardButton("Support Group", url="https://t.me/riogroupsupport")
                 ],
             ]
         ),
@@ -78,7 +78,7 @@ def _source_code(client, message):
                 ],
                 [
                     InlineKeyboardButton("Join Updates Channel", url="https://t.me/riobotsupport"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/siiniaja")
+                    InlineKeyboardButton("Support Group", url="https://t.me/riogroupsupport")
                 ],
                 [
                     InlineKeyboardButton("Creator", url="https://t.me/riio00")
@@ -98,7 +98,7 @@ def _help(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/siiniaja).",
+                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/riogroupsupport).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -120,7 +120,7 @@ def _help(client, message):
         except Exception:
             client.send_message(
                 chat_id=message.chat.id,
-                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/siiniaja).",
+                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/riogroupsupport).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
