@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = C.UPDATES_CHANNEL
 logging.basicConfig(level=logging.INFO)
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@Forcesubtele_xobot']))
+@Client.on_message(filters.incoming & filters.command(['start', 'start@forcesubscriberiobot']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
@@ -17,7 +17,7 @@ def _start(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/siiniaja).",
+                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/RioGroupSupport).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -42,7 +42,7 @@ def _start(client, message):
 	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/riobotsupport"),
+                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/RioProjects"),
                            InlineKeyboardButton("Support Group", url="https://t.me/riogroupsupport")
                       ],
 
@@ -57,7 +57,7 @@ def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/riobotsupport"),
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/RioProjects"),
                     InlineKeyboardButton("Support Group", url="https://t.me/riogroupsupport")
                 ],
             ]
@@ -77,7 +77,7 @@ def _source_code(client, message):
                     InlineKeyboardButton("Creator", url="https://t.me/riio00")
                 ],
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/riobotsupport"),
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/RioProjects"),
                     InlineKeyboardButton("Support Group", url="https://t.me/riogroupsupport")
                 ],
                 [
